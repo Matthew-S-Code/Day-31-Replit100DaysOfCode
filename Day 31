@@ -1,0 +1,49 @@
+import os
+import time
+
+def colourCodes(colour):
+ if colour == "red":
+ return ("\033[0;31m")
+ elif colour == "white":
+ return("\033[0m")
+ elif colour == "blue":
+ return("\033[0;34m")
+ elif colour == "green":
+ return("\033[0;32m")
+ elif colour == "pink":
+ return("\033[38;5;13m")
+ elif colour == "yellow":
+ return ("\033[33m")
+ else:
+ print()
+
+title = f"{colourCodes('red')}={colourCodes('white')}={colourCodes('blue')}={colourCodes('yellow')}Music App{colourCodes('blue')}={colourCodes('white')}={colourCodes('red')}="
+
+print(f"{title:^90}")
+print("\n")
+print(f"\t{colourCodes('white')} Radio Gaga")
+print(f"\t{colourCodes('yellow')} Queen")
+print("\n")
+print(f"{colourCodes('white')}PREV")
+print(f"\t{colourCodes('green')}NEXT")
+print(f"\t\t{colourCodes('pink')}PAUSE")
+
+
+time.sleep(2)
+os.system("clear")
+
+title1 = f"{colourCodes('white')}WELCOME TO\n {colourCodes('blue')}\t\t\t\t--\t ARMBOOK\t--"
+
+print(f"{title1:^80}")
+
+text = f"{colourCodes('yellow')}Definitely not a rip off"
+print(f"{text:>100}")
+text = f"{colourCodes('yellow')} of a certain other"
+print(f"{text:>100}")
+text = f"{colourCodes('yellow')}networking site"
+print(f"{text:>100}")
+
+print(f"{colourCodes('red')} \t\t\t\t\t Honest")
+print("\t")
+username = input(f"{colourCodes('white')} \t\t\t\t\t Username:")
+password = input(f"{colourCodes('white')} \t\t\t\t\t Password:")
